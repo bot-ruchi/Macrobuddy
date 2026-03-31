@@ -1,0 +1,206 @@
+# 🌿 MacroBuddy - Your Smart Nutrition Companion
+
+MacroBuddy is a modern, minimalist health-tech website designed to help you track your nutrition, calculate your personal targets, and maintain healthy eating habits through gamified features and AI-powered recommendations.
+
+## ✨ Features
+
+### 🔒 Smart Login Vault
+- Secure vault-themed login experience
+- Animated vault door with glowing effects
+- Recent activity timeline
+- Glass-morphism design with emerald green theme
+
+### 📊 Nutrition Command Center (Dashboard)
+- Daily nutrition overview with macro tracking
+- Real-time progress bars and percentages
+- Feature grid with 6 main tools
+- Health score assessment
+- Beautiful food photography backgrounds
+
+### 🧮 Health Blueprint Calculator
+- Personal nutrition target calculation
+- BMR and TDEE computation using Mifflin-St Jeor equation
+- Activity level adjustments
+- Visual macro target display
+- Save results to dashboard
+
+### 🍲 Mess Menu Magic
+- Smart food calculator with comprehensive database
+- Real-time macro calculations per gram
+- Visual macro breakdown with color-coded bars
+- Search functionality for quick food lookup
+- Add/remove foods with quantity adjustments
+
+### 📖 Meal Diary Timeline
+- Daily meal tracking with timeline layout
+- Meal categorization (breakfast, lunch, dinner, snacks)
+- Real-time cumulative totals
+- Progress tracking against daily targets
+- End-of-day nutrition report card
+
+### 🚀 Macro Doctor (AI Assistant)
+- Smart nutrition recommendations
+- Priority-based food suggestions
+- Nutrient density scoring
+- Alert system for macro imbalances
+- AI-powered insights and analysis
+
+### 🔥 Health Streaks (Gamification)
+- Streak tracking with motivational messages
+- Badge collection system
+- Activity calendar heatmap
+- Progress statistics
+- Achievement milestones
+
+## 🎨 Design Philosophy
+
+**"Apple Health meets Notion meets Duolingo"**
+
+- **Modern & Minimalist**: Clean, sophisticated interface
+- **Glass-morphism**: Floating cards with backdrop blur effects
+- **Emerald Green Palette**: Primary colors from emerald-500 to deep forest
+- **Food Photography**: High-resolution backgrounds at 5-10% opacity
+- **Micro-interactions**: Smooth animations and hover effects
+- **Responsive Design**: Mobile-first approach with breakpoint optimization
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React 19.1.1 with Vite
+- **Styling**: Tailwind CSS 4.1.14 with custom configurations
+- **Animations**: Framer Motion 12.23.22
+- **Icons**: Lucide React 0.544.0
+- **Charts**: Recharts 3.2.1
+- **Routing**: React Router DOM
+- **Build Tool**: Vite 7.1.7
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd macrobuddy
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Install React Router DOM**
+   ```bash
+   npm install react-router-dom
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## 📱 Responsive Design
+
+- **Mobile**: Stack layout, 2-column grids maximum
+- **Tablet**: 3-column grids, side-by-side layouts
+- **Desktop**: Full 4-column grids, spacious layouts
+
+## ♿ Accessibility Features
+
+- High contrast text (emerald-800 on light backgrounds)
+- Clear focus states with emerald-500 borders
+- Semantic HTML structure
+- ARIA labels on interactive elements
+- Reduced motion support for users with vestibular disorders
+- Keyboard navigation support
+
+## 🎯 Key Components
+
+### Pages
+- `LandingPage.jsx` - Vault-themed login experience
+- `Dashboard.jsx` - Main nutrition overview
+- `HealthBlueprint.jsx` - Nutrition calculator
+- `MessMenuMagic.jsx` - Food calculator
+- `MealDiary.jsx` - Meal tracking timeline
+- `MacroDoctor.jsx` - AI nutrition assistant
+- `HealthStreaks.jsx` - Gamification features
+
+### Styling
+- `App.css` - Custom component styles and utilities
+- `index.css` - Global styles and Tailwind imports
+- `tailwind.config.js` - Custom Tailwind configuration
+
+## 🔧 Customization
+
+### Colors
+The app uses a custom emerald green palette defined in `tailwind.config.js`:
+- Primary: emerald-500 (#10b981)
+- Secondary: emerald-600 (#059669)
+- Accent: emerald-800 (#065f46)
+
+### Macro Colors
+- Protein: Blue (#3b82f6)
+- Carbs: Amber (#f59e0b)
+- Fats: Rose (#f43f5e)
+
+### Animations
+Custom animations are defined in both CSS and Tailwind config:
+- Fade in/out effects
+- Pulse glow effects
+- Floating animations
+- Shimmer loading states
+
+## 📊 Sample Data
+
+The application includes sample data for demonstration:
+- 12 food items in the database
+- Sample meal entries for the diary
+- Mock nutrition targets and progress
+- Example streak data and badges
+
+## 🔮 Future Enhancements
+
+- User authentication and data persistence
+- Real food database integration
+- Social features and sharing
+- Advanced analytics and insights
+- Mobile app development
+- Integration with fitness trackers
+- Meal planning and recipes
+- Barcode scanning for food items
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+For support, email support@macrobuddy.com or join our Discord community.
+
+---
+
+**Built with ❤️ by the MacroBuddy Team**
+
+*Your health journey starts here* 🌿✨

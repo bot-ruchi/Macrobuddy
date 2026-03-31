@@ -1,0 +1,53 @@
+#!/bin/bash
+
+echo "🔧 MacroBuddy React Fix Script"
+echo "=============================="
+echo ""
+
+# Check if we're in the right directory
+if [ ! -f "package.json" ]; then
+    echo "❌ Error: Not in the correct directory. Please run this from /home/swetha/macrobuddy"
+    exit 1
+fi
+
+echo "📦 Checking dependencies..."
+
+# Check if node_modules exists
+if [ ! -d "node_modules" ]; then
+    echo "📥 Installing dependencies..."
+    npm install
+else
+    echo "✅ Dependencies already installed"
+fi
+
+# Check if react-router-dom is installed
+if ! npm list react-router-dom > /dev/null 2>&1; then
+    echo "📥 Installing react-router-dom..."
+    npm install react-router-dom
+else
+    echo "✅ react-router-dom is installed"
+fi
+
+echo ""
+echo "🧪 Testing React setup..."
+
+# Create a simple test by temporarily replacing App.jsx
+echo "import TestApp from './TestApp'" > src/App.jsx
+echo "import './App.css'" >> src/App.jsx
+echo "" >> src/App.jsx
+echo "function App() {" >> src/App.jsx
+echo "  return <TestApp />" >> src/App.jsx
+echo "}" >> src/App.jsx
+echo "" >> src/App.jsx
+echo "export default App" >> src/App.jsx
+
+echo "✅ Created test version of App.jsx"
+echo ""
+echo "🚀 Starting development server..."
+echo "The app will open at: http://localhost:5173"
+echo ""
+echo "If you see a green MacroBuddy page with a working button, React is working!"
+echo "Press Ctrl+C to stop the server, then run: ./restore-app.sh"
+echo ""
+
+npm run dev

@@ -1,0 +1,32 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import LandingPage from './pages/LandingPage'
+import Dashboard from './pages/Dashboard'
+import HealthBlueprint from './pages/HealthBlueprint'
+import MessMenuMagic from './pages/MessMenuMagic'
+import MealDiary from './pages/MealDiary'
+import MacroDoctor from './pages/MacroDoctor'
+import HealthStreaks from './pages/HealthStreaks'
+import './App.css'
+
+function App() {
+  console.log('🚀 MacroBuddy App is rendering!')
+  
+  return (
+    <Router>
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-green-100">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/blueprint" element={<HealthBlueprint />} />
+          <Route path="/mess-menu" element={<MessMenuMagic />} />
+          <Route path="/meal-diary" element={<MealDiary />} />
+          <Route path="/macro-doctor" element={<MacroDoctor />} />
+          <Route path="/health-streaks" element={<HealthStreaks />} />
+        </Routes>
+      </div>
+    </Router>
+  )
+}
+
+export default App
